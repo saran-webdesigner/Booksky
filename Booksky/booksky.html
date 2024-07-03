@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booksky</title>
+  <link rel="stylesheet" href="booksky.css">
+
+  <!-- Insert the fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="navbar">
+    <h1>Booksky</h1>
+  </div>
+
+
+
+  <div class="container">
+    <div class="box-container">
+    <h2>To Kill a Mockingbird</h2>
+    <h5>Harper Lee</h5>
+    <p >Set in the racially charged atmosphere of 1930s Alabama, this novel follows the Finch family. The narrative is
+      presented through the eyes of young Scout Finch, whose father, Atticus, is a principled lawyer defending a black
+      man falsely accused of raping a white woman.</p>
+    <button onclick="deleteitem(event)">Delete</button>
+    </div>
+    
+  </div>
+
+
+  <button class="fab">+</button>
+
+  <div class="overlay">
+    <div class="overlay-container">
+      <h3>Submit your book</h3>
+      <hr>
+      <div class="text-inputs">
+        <input type="text" id="bookname" placeholder="Enter book name">
+        <input type="text" id="author" placeholder="Enter author name">
+        <textarea id="descripe" placeholder="Short description"></textarea>
+      </div>
+      <div class="btns">
+        <button class="close">Cancel</button>
+        <button class="add" id="addbook">submit</button>
+      </div>
+    </div>
+  </div>
+  <script src="booksky.js"></script>
+</body>
+
+</html>
